@@ -13,8 +13,9 @@ i {background-repeat: no-repeat; background-position: center; background-size: 1
 .swiper-button-prev {display: none;}
 .swiper-button-next::after, .swiper-button-prev::after {display: none;}
 
+
 /* ---- Header ---- */
-header {z-index: 100; position: fixed; padding: calc(100vw * 30 /1920) calc(100vw * 105 /1920); width: 100%; background-color: transparent;}
+header {z-index: 100; position: fixed; padding: calc(100vw * 30 /1920) calc(100vw * 105 /1920); width: 100%; background-color: rgba(0, 0, 0, 0.5);}
 header .gnb__wrap .gnb__1d-wrap {display: flex; justify-content: space-between;}
 header .gnb__wrap .gnb__1d-wrap .gnb {display: inline-flex; align-items: center; gap: calc(100vw * 85 /1920);}
 header .gnb__wrap .gnb__1d-wrap .gnb li {display: flex;	flex-direction: column; transition: all ease-in-out 0.5s;}
@@ -43,6 +44,11 @@ footer .footer__wrap .text__wrap .bottom__wrap p {padding-left: calc(100vw * 980
 
 footer {width: 100%;}
 
+/* sub page */
+.aboutus-wrap .img{width: calc(1920 * 1920/1920);}
+.ourculture-wrap .img{width: calc(1920 * 1920/1920);}
+.brands-wrap .img{width: calc(1920 * 1920/1920);}
+.commitments-wrap .img{width: calc(1920 * 1920/1920);}
 
 /* ---- main-wrap ---- */ 
 /* ---- section1 ---- */
@@ -90,7 +96,7 @@ footer {width: 100%;}
 
 
 /* ---- section4 ---- */
-.main-wrap #section4 {background-color: #fff; color: #000; margin-top: calc(100vw * -1 /1920); padding: calc(100vw * 210 /1920) 0 calc(100vw * 553 /1920);}
+.main-wrap #section4 {background-color: #000; color: #fff; margin-top: calc(100vw * -1 /1920); padding: calc(100vw * 210 /1920) 0 calc(100vw * 553 /1920);}
 .main-wrap #section4 .text__wrap {cursor: default; width: 100%; padding-bottom: calc(100vw * 93 /1920);}
 .main-wrap #section4 .text__wrap .title {margin: 0 auto; width: fit-content; font-family: 'Poppins'; font-size: calc(100vw * 100 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 100 /1920);}
 .main-wrap #section4 .text__wrap .title span {font-family: 'NewYork';}
@@ -108,19 +114,8 @@ footer {width: 100%;}
 .main-wrap #section4 .main-swiper3 .swiper-pagination .swiper-pagination-bullet:nth-child(4) {margin: calc(100vw * 86 /1920) 0 0 calc(100vw * -834 /1920);}
 .main-wrap #section4 .main-swiper3 .swiper-pagination .swiper-pagination-bullet:nth-child(5) {margin: calc(100vw * 86 /1920) 0 0;}
 
-
-.scroll-wave {
-  position: relative;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  transform-origin: bottom;
-  transform: scaleY(0); /* 초기 스케일 0으로 설정하여 숨김 */
-  transition: transform 0.3s ease; /* 스케일 변환에 대한 CSS 트랜지션 */
-}
-
 /* ---- section5 ---- */
-.main-wrap #section5 {background-color: #fff; color: #000; margin-top: calc(100vw * -1 /1920); padding: calc(100vw * 210 /1920) 0 calc(100vw * 133 /1920);}
+.main-wrap #section5 {background-color: #000; color: #fff; margin-top: calc(100vw * -1 /1920); padding: calc(100vw * 210 /1920) 0 calc(100vw * 133 /1920);}
 .main-wrap #section5 .text__wrap {cursor: default; width: 100%;}
 .main-wrap #section5 .text__wrap .title {margin: 0 auto; width: fit-content; font-family: 'Poppins'; font-size: calc(100vw * 100 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 100 /1920);}
 .main-wrap #section5 .text__wrap .title span {font-family: 'NewYork';}
