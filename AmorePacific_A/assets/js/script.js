@@ -65,6 +65,7 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
   slidesPerView: "auto",
   grabCursor: true,
   navigation: {
+    prevEl: ".swiper-button-prev",
     nextEl: ".swiper-button-next",
   },
 });

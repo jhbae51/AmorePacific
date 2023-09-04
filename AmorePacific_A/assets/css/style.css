@@ -8,8 +8,10 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
 /* ---- Icon ---- */
 i {background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
 /* ---- btn ---- */
-.main-swiper2 .swiper-button-prev {background: url('../images/swiper-prev.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
-.main-swiper2 .swiper-button-next {background: url('../images/swiper-next.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
+.main-swiper2 .swiper-button-prev,
+.main-swiper4 .swiper-button-prev {background: url('../images/swiper-prev.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
+.main-swiper2 .swiper-button-next,
+.main-swiper4 .swiper-button-next {background: url('../images/swiper-next.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
 .swiper-button-prev {display: none;}
 .swiper-button-next::after, .swiper-button-prev::after {display: none;}
 
@@ -82,7 +84,7 @@ footer {width: 100%;}
 
 
 /* ---- section5 ---- */
-.main-wrap #section5 {background-color: #F1F0EF; color: #000; padding: calc(100vw * 120 /1920) calc(100vw * 320 /1920);}
+/* .main-wrap #section5 {background-color: #F1F0EF; color: #000; padding: calc(100vw * 120 /1920) calc(100vw * 320 /1920);}
 .main-wrap #section5 .text__wrap {cursor: default; width: 100%;}
 .main-wrap #section5 .text__wrap .title {color: #000; font-family: 'Arita-buri'; font-size: calc(100vw * 56 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 52 /1920); text-transform: capitalize;}
 .main-wrap #section5 .main-swiper4 {padding: calc(100vw * 93 /1920) calc(100vw * 300 /1920) 0 0; margin-left: calc(100vw * -422 /1920); position: relative;}
@@ -90,4 +92,19 @@ footer {width: 100%;}
 .main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {cursor: url("../images/drag_cursor.png"), grab ; }
 .main-wrap #section5 .main-swiper4 .swiper-wrapper {gap: calc(100vw * 100 /1920);}
 .main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {width: calc(100vw * 500 /1920);}
-.main-wrap #section5 .main-swiper4 .swiper-button-next {margin-right: calc(100vw * 60 /1920); top: 0; width: calc(100vw * 108 /1920); height: calc(100vw * 77 /1920);}
+.main-wrap #section2 .main-swiper4 .swiper-btn {margin-right: calc(100vw * 60 /1920); right: 0; position: absolute; top: calc(100vw * 105 /1920);}
+.main-wrap #section2 .main-swiper4 .swiper-btn div {width: calc(100vw * 48 /1920); height: calc(100vw * 24 /1920);}
+.main-wrap #section2 .main-swiper4 .swiper-button-prev {left: calc(100vw * -60 /1920);}
+.main-wrap #section2 .main-swiper4 .swiper-button-next {left: calc(100vw * 10 /1920);} */
+
+.main-wrap #section5 {background-color: #F1F0EF; color: #000; padding: calc(100vw * 120 /1920) calc(100vw * 320 /1920);}
+.main-wrap #section5 .text__wrap {cursor: default; width: 100%;}
+.main-wrap #section5 .text__wrap .title {color: #000; font-family: 'Arita-buri'; font-size: calc(100vw * 56 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 52 /1920); text-transform: capitalize;}
+.main-wrap #section5 .main-swiper4 {padding: calc(100vw * 96 /1920) 0 0; margin: 0 calc(100vw * -350 /1920) 0 calc(100vw * -350 /1920); position: relative;}
+.main-wrap #section5 .main-swiper4 .swiper-wrapper, 
+.main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {cursor: url("../images/drag_cursor.png"), grab ; }
+.main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {width: calc(100vw * 410 /1920);}
+.main-wrap #section5 .main-swiper4 .swiper-btn {margin-right: calc(100vw * 60 /1920); right:  calc(100vw * 105 /1920); position: absolute; top:0;}
+.main-wrap #section5 .main-swiper4 .swiper-btn div {width: calc(100vw * 48 /1920); height: calc(100vw * 24 /1920);}
+.main-wrap #section5 .main-swiper4 .swiper-button-prev {left: calc(100vw * -60 /1920);}
+.main-wrap #section5 .main-swiper4 .swiper-button-next {left: calc(100vw * 10 /1920);}
