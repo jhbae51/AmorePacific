@@ -37,9 +37,9 @@ footer {width: 100%;}
 .main-wrap #section1 .main-swiper .swiper-pagination .swiper-pagination-bullet {width: calc(100vw * 170 /1920); border-radius: 0; height: calc(100vw * 57 /1920); background-color: transparent;}
 .main-wrap #section1 .main-swiper .swiper-pagination .swiper-pagination-bullet:nth-child(2) {width: calc(100vw * 210 /1920);}
 .main-wrap #section1 .main-swiper .swiper-button-next {top: calc(100vw * 800 /1920); left: calc(100vw * 1380 /1920); width: calc(100vw * 500 /1920); height: calc(100vw * 300 /1920);}
-.autoplay-progress {position: absolute; top: calc(100vw * 130 /1920); left: calc(100vw * 827 /1920); z-index: 10; width: calc(100vw * 64 /1920); height: calc(100vw * 64 /1920); display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--swiper-theme-color); stroke-width: calc(100vw * 1 /1920);}
-.autoplay-progress svg {--progress: 0; position: absolute; left: 0; top: 0px; z-index: 10; width: 100%; height: 100%; stroke-width: calc(100vw * 1 /1920); stroke: var(--swiper-theme-color); fill: none; stroke-dashoffset: calc(204 * (1 - var(--progress))); stroke-dasharray: 204; transform: rotate(-90deg);}
-.autoplay-progress span {color: #FFF; font-family: 'PP Fragment'; font-size: calc(100vw * 32 /1920); font-style: normal; font-weight: 300; line-height: normal; text-transform: capitalize;}
+.autoplay-progress {position: absolute; top: calc(100vw * 130 /1920); left: calc(100vw * 827 /1920); z-index: 10; width: calc(100vw * 64 /1920); height: calc(100vw * 64 /1920); display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--swiper-theme-color); stroke-width: 1px;}
+.autoplay-progress svg {--progress: 0; position: absolute; left: 0; top: 0px; z-index: 10; width: 100%; height: 100%; stroke-width: 1px; stroke: var(--swiper-theme-color); fill: none; stroke-dashoffset: calc(204 * (1 - var(--progress))); stroke-dasharray: 204; transform: rotate(-90deg);}
+.autoplay-progress span {color: #FFF; font-family: 'PP Neue Montreal'; font-size: calc(100vw * 32 /1920); font-style: normal; font-weight: 300; line-height: normal; text-transform: capitalize;}
 
 /* ---- section2 ---- */
 .main-wrap #section2 {background-color: #fff; color: #000; padding: calc(100vw * 240 /1920) calc(100vw * 320 /1920);}
