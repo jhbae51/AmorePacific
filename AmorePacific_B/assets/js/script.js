@@ -116,27 +116,48 @@ function se3HoverEvent() {
     function() {
       $brandImg1.addClass('list1');
       $brandImg2.addClass('list1');
+      $brandImg1.removeClass('list2');
+      $brandImg2.removeClass('list2');
+      $brandImg1.removeClass('list3');
+      $brandImg2.removeClass('list3');
+      $list1.addClass('active');
+      $list2.removeClass('active');
+      $list3.removeClass('active');
     }, function() {
-      $brandImg1.removeClass('list1');
-      $brandImg2.removeClass('list1');
+      // $brandImg1.removeClass('list1');
+      // $brandImg2.removeClass('list1');
     }
   );
   $list2.hover(
     function() {
       $brandImg1.addClass('list2');
       $brandImg2.addClass('list2');
+      $brandImg1.removeClass('list1');
+      $brandImg2.removeClass('list1');
+      $brandImg1.removeClass('list3');
+      $brandImg2.removeClass('list3');
+      $list2.addClass('active');
+      $list1.removeClass('active');
+      $list3.removeClass('active');
     }, function() {
-      $brandImg1.removeClass('list2');
-      $brandImg2.removeClass('list2');
+      // $brandImg1.removeClass('list2');
+      // $brandImg2.removeClass('list2');
     }
   );
   $list3.hover(
     function() {
       $brandImg1.addClass('list3');
       $brandImg2.addClass('list3');
+      $brandImg1.removeClass('list1');
+      $brandImg2.removeClass('list1');
+      $brandImg1.removeClass('list2');
+      $brandImg2.removeClass('list2');
+      $list3.addClass('active');
+      $list1.removeClass('active');
+      $list2.removeClass('active');
     }, function() {
-      $brandImg1.removeClass('list3');
-      $brandImg2.removeClass('list3');
+      // $brandImg1.removeClass('list3');
+      // $brandImg2.removeClass('list3');
     }
   );
 }
