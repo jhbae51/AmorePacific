@@ -41,7 +41,7 @@ var mainSwiper2 = new Swiper(".main-swiper2", {
 
 const mainSwiper3 = new Swiper('.main-swiper3', {
   autoplay: {
-    delay: 300000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   effect: "fade",
