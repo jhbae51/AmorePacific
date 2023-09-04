@@ -79,6 +79,11 @@
   src: url('../fonts/PPNeueMontreal-Bold.otf') format('opentype');
 }
 @font-face {
+  font-family: 'PP Fragment';
+  font-weight: 300;
+  src: url('../fonts/PPFragment-SerifLight.otf') format('opentype');
+}
+@font-face {
   font-family: 'Galabiyah';
   font-weight: 400;
   src: url('../fonts/galabiyah.otf') format('opentype');

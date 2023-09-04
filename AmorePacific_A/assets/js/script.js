@@ -53,13 +53,6 @@ const mainSwiper3 = new Swiper('.main-swiper3', {
 	},
 });
 
-var mainSwiper3_1 = new Swiper(".main-swiper3_1", {
-  direction: "vertical",
-  grabCursor: true,
-  slidesPerView: "auto",
-
-});
-
 var mainSwiper4 = new Swiper(".main-swiper4", {
   // direction: "horizontal",
   slidesPerView: "auto",
@@ -70,6 +63,16 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
   },
 });
 
+var subSwiper1 = new Swiper(".sub-swiper1", {
+  grabCursor: true,
+  slidesPerView: "auto",
+  effect: "fade",
+});
+var subSwiper2 = new Swiper(".sub-swiper2", {
+  grabCursor: true,
+  slidesPerView: "auto",
+  effect: "fade",
+});
 /* ---- gnb ---- */  
 /* ---- scroll ---- */  
 // Hide Header on on scroll down

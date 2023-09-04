@@ -138,16 +138,16 @@ footer {width: 100%;}
 .sub-wrap {background-color: #000; color: #FFF;}
 .sub-wrap #img-section .img__wrap img {width: calc(100vw * 1920 /1920);}
 /* ---- section1 ---- */
-.sub-wrap #section1 .text__wrap {padding: calc(100vw * 336 /1920) calc(100vw * 0 /1920) calc(100vw * 120 /1920);}
+.sub-wrap #section1 .text__wrap {padding: calc(100vw * 170 /1920) 0 calc(100vw * 80 /1920);}
 .sub-wrap #section1 .text__wrap .title__wrap {display: flex; gap: calc(100vw * 32 /1920); justify-content: center;}
 .sub-wrap #section1 .text__wrap .title__wrap .title {opacity: 0%; transform: translateY(50px); justify-content: center; clip-path: polygon(0 0,100% 0,100% 0,0 0%);}
 .sub-wrap #section1 .text__wrap .title__wrap .title {text-align: center; font-family: 'NewYork'; font-size: calc(100vw * 120 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 120 /1920)}
 .sub-wrap #section1 .text__wrap .content__wrap {padding-top: calc(100vw * 50 /1920);}
-.sub-wrap #section1 .text__wrap .content__wrap .content {opacity: 0%; color: #FFF; text-align: center; font-family: 'Arita-dotum'; font-size: calc(100vw * 16 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 25 /1920); text-transform: uppercase;}
+.sub-wrap #section1 .text__wrap .content__wrap .content {opacity: 0%; color: #FFF; text-align: center; font-family: 'Arita-dotum'; font-size: calc(100vw * 16 /1920); font-style: normal; font-weight: 200; line-height: calc(100vw * 25 /1920); text-transform: uppercase;}
 
 /* ---- brand-wrap ---- */ 
 /* ---- section2 ---- */
-.brands-wrap #section2 .list__wrap {padding: calc(100vw * 117 /1920) calc(100vw * 0 /1920) calc(100vw * 110 /1920);}
+.brands-wrap #section2 .list__wrap {padding: 0 0 calc(100vw * 110 /1920);}
 .brands-wrap #section2 .list__wrap ul {cursor: pointer; display: flex; justify-content: center; gap: calc(100vw * 56 /1920);}
 .brands-wrap #section2 .list__wrap ul li {opacity: 0.65; color: #FFF; font-family: 'Arita-dotum'; font-size: calc(100vw * 21 /1920); font-style: normal; font-weight: 400; line-height: calc(100vw * 32 /1920); text-transform: uppercase;}
 .brands-wrap #section2 .list__wrap ul li.active {opacity: 1;}
