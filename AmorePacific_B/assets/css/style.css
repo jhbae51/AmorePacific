@@ -81,7 +81,7 @@ footer {width: 100%;}
 .main-wrap #section3 .text__wrap .title span {font-family: 'NewYork';}
 .main-wrap #section3 .list__wrap {padding: calc(100vw * 93 /1920) 0 0; margin: 0 auto; width: fit-content; z-index: 10; position: relative;}
 .main-wrap #section3 .list__wrap ul {cursor: pointer; display: inline-flex; flex-direction: column; align-items: center; gap: calc(100vw * 17 /1920)}
-.main-wrap #section3 .list__wrap ul li {font-family: 'Poppins'; font-size: calc(100vw * 48 /1920); font-style: normal; font-weight: 300; line-height: normal; text-transform: uppercase;}
+.main-wrap #section3 .list__wrap ul li {transition: all 0.2s ease-in-out; font-family: 'Poppins'; font-size: calc(100vw * 48 /1920); font-style: normal; font-weight: 200; line-height: normal; text-transform: uppercase;}
 .main-wrap #section3 .list__wrap ul li:hover {font-weight: 600;}
 .main-wrap #section3 .img__wrap {position: absolute; top: 0; z-index: 1;}
 .main-wrap #section3 .img__wrap div {background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute}

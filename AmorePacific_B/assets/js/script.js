@@ -76,7 +76,7 @@ function gnbScrollEvent() {
   $section5.addClass('color3');
   $section5.removeClass('color4');
 
-  if (documentHeight >= section4Top-500) {
+  if (documentHeight >= section4Top-700) {
     $section3.addClass('color4');
     $section3.removeClass('color3');
     $section4.addClass('color4');
