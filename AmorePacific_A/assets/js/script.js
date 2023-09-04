@@ -3,9 +3,12 @@ history.scrollRestoration = "auto"
 
 
 /* ---- swiper ---- */  
+
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
 const mainSwiper = new Swiper('.main-swiper', {
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   effect: "fade",
@@ -15,28 +18,38 @@ const mainSwiper = new Swiper('.main-swiper', {
 		el : '.swiper-pagination',
 		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
 	},
-});
-
-var mainSwiper2 = new Swiper(".main-swiper2", {
-  // direction: "horizontal",
-  slidesPerView: "auto",
-  grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
   },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}`;
+    }
+  }
 });
 
-var mainSwiper3menu = ['Architecture', 'sustainability', 'Customer Safety', 'Beauty Research & Innovation', 'Space' ]
+var mainSwiper2 = new Swiper(".main-swiper2", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  grabCursor: true,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next"
+  },
+});
+
 const mainSwiper3 = new Swiper('.main-swiper3', {
+  autoplay: {
+    delay: 300000,
+    disableOnInteraction: false,
+  },
   effect: "fade",
   loop:true,
   loopAdditionalSlides: 1,	
   pagination : { // 페이징 설정
 		el : '.swiper-pagination',
 		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (mainSwiper3menu[index]) + '</span>';
-    },
 	},
 });
 
@@ -58,55 +71,44 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
 
 /* ---- gnb ---- */  
 /* ---- scroll ---- */  
-function gnbScrollEvent() {
-  let documentHeight = $(document).scrollTop();
-  let section1Top = jQuery('#section1').offset().top;
-  let $header = $('header');
-  let $logo = $('#gnb .gnb__wrap .gnb__1d-wrap');
-  let $right = $('#gnb .gnb__wrap .right');
-  let $left = $('#gnb .gnb__wrap .left');
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
 
-
-  // console.log(documentHeight, section1Top);
-  if (documentHeight >= section1Top+300) {
-    $right.removeClass('right2');
-    $left.removeClass('left2');
-    $right.addClass('right1');
-    $left.addClass('left1');
-    $header.hover(
-      function() {
-        $right.removeClass('right1');
-        $left.removeClass('left1');    
-        $right.addClass('right2');
-        $left.addClass('left2');
-      }, function() {
-        $right.removeClass('right2');
-        $left.removeClass('left2');
-        $right.addClass('right1');
-        $left.addClass('left1');
-      }
-    );
-  } else {
-    $right.removeClass('right1');
-    $left.removeClass('left1');
-    $right.addClass('right2');
-    $left.addClass('left2');
-    $logo.hover(
-      function() {
-        $right.removeClass('right1');
-        $left.removeClass('left1');
-      }
-    );
-  }
-} 
-
-$(window).scroll(function () {
-  gnbScrollEvent();
-})
-
-$(document).ready(function () {
-  gnbScrollEvent();
+$(window).scroll(function(event){
+    didScroll = true;
 });
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('up2').addClass('up1');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('up1').addClass('up2');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 
 /* ---- section3 ---- */
@@ -152,19 +154,16 @@ $(document).ready(function () {
 });
 
 
-const scrollWave = document.querySelector('.scroll-wave');
-const windowHeight = window.innerHeight;
-let prevScrollPosition = 0;
+// const scrollWave = document.querySelector('.scroll-wave');
+// const windowHeight = window.innerHeight;
+// let prevScrollPosition = 0;
 
-window.addEventListener('scroll', function () {
-  const scrollPosition = window.scrollY;
+// window.addEventListener('scroll', function () {
+//   const scrollPosition = window.scrollY;
 
-  // 스크롤 방향 확인
-  if (scrollPosition > prevScrollPosition) {
-    // 스크롤이 내려가는 방향일 때만 스케일 변경
-    const waveScale = 1 - (scrollPosition / windowHeight);
-    scrollWave.style.transform = `scaleY(${waveScale})`;
-  }
+//   // 스크롤 방향 확인
+//   if (scrollPosition > prevScrollPosition) {
+//   }
 
-  prevScrollPosition = scrollPosition;
-});
+//   prevScrollPosition = scrollPosition;
+// });

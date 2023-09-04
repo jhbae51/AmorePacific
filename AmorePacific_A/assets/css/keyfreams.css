@@ -290,3 +290,27 @@
     height: calc(100vw * 100 /1920);
   }  
 }
+
+.up1 {
+  animation: up1 0.3s ease-in-out forwards;
+}
+.up2 {
+  animation: up2 0.3s ease-in-out forwards;
+}
+
+@keyframes up1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(100vw * -104 /1920));
+  }
+}
+@keyframes up2 {
+  from {
+    transform: translateY(calc(100vw * -104 /1920));
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

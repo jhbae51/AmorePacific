@@ -4,6 +4,7 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
 ::-webkit-scrollbar {
   display: none;
 }
+/* .main-swiper2,.main-swiper4 {max-width: 1920px;} */
 
 /* ---- Icon ---- */
 
