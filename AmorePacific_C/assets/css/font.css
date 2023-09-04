@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'APHQ';
+  font-weight: 400;
+  src: url('../fonts/APHQHangeul.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 400;
+  src: url('../fonts/AvenirLTStd-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 500;
+  src: url('../fonts/AvenirLTStd-Roman.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 700;
+  src: url('../fonts/AvenirLTStd-Black.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Arita-dotum';
+  font-weight: 200;
+  src: url('../fonts/Arita4.0_T.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Arita-dotum';
+  font-weight: 300;
+  src: url('../fonts/Arita4.0_L.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Arita-dotum';
+  font-weight: 400;
+  src: url('../fonts/Arita4.0_M.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Arita-dotum';
+  font-weight: 500;
+  src: url('../fonts/Arita4.0_SB.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Arita-dotum';
+  font-weight: 700;
+  src: url('../fonts/Arita4.0_B.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 200;
+  src: url('../fonts/PPNeueMontreal-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 300;
+  src: url('../fonts/PPNeueMontreal-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 400;
+  src: url('../fonts/PPNeueMontreal-Italic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 500;
+  src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 600;
+  src: url('../fonts/PPNeueMontreal-SemiBolditalic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-weight: 700;
+  src: url('../fonts/PPNeueMontreal-Bold.otf') format('opentype');
+}
