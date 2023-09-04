@@ -8,7 +8,8 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
 /* ---- Icon ---- */
 i {background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
 /* ---- btn ---- */
-.swiper-button-next {background: url('../images/swiper-next.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
+.main-swiper2 .swiper-button-next {background: url('../images/swiper-next.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
+.main-swiper4 .swiper-button-next {background: url('../images/swiper-next-bk.png'); background-repeat: no-repeat; background-position: center; background-size: 100%; position: absolute;}
 .swiper-button-prev {display: none;}
 .swiper-button-next::after, .swiper-button-prev::after {display: none;}
 
@@ -20,8 +21,11 @@ header .gnb__wrap .gnb__1d-wrap .gnb li {display: flex;	flex-direction: column; 
 header .gnb__wrap .gnb__1d-wrap .gnb li a {color: #FFF; font-family: 'Poppins'; font-size: calc(100vw * 18 /1920); font-style: normal; font-weight: 300; line-height: normal; text-transform: uppercase;}
 header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo {padding: 0 calc(100vw * 40 /1920);}
 header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a {background-image: url('../images/gnb-logo.png'); width: calc(100vw * 220 /1920); height: calc(100vw * 32 /1920); background-repeat: no-repeat; background-position: center; background-size: 100%;}
+header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a.color1 {background-image: url('../images/gnb-logo-bk.png'); transition: all ease-in-out 0.5s; }
+header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a.color2 {background-image: url('../images/gnb-logo.png'); transition: all ease-in-out 0.5s; }
 header .gnb__wrap .gnb__1d-wrap .language .gnb__language {background-image: url('../images/gnb_language.png'); width: calc(100vw * 134 /1920); height: calc(100vw * 32 /1920); background-repeat: no-repeat; background-position: center; background-size: 100%;}
-
+header .gnb__wrap .gnb__1d-wrap .language .gnb__language.color1 {background-image: url('../images/gnb_language-bk.png');}
+header .gnb__wrap .gnb__1d-wrap .language .gnb__language.color2 {background-image: url('../images/gnb_language.png');}
 
 /* ---- footer ---- */
 /* footer {background-color: #fff; color: #000; position: relative;}
@@ -106,18 +110,13 @@ footer {width: 100%;}
 
 
 .scroll-wave {
-  position: absolute;
-  bottom: -11.5%;
+  position: relative;
+  left: 0;
   width: 100%;
-  z-index: 0;
-  transform-origin: center bottom; 
-  transform: scaleY(1);
-  transition: all 0.3s ease;
-}
-
-#initial-wave, #final-wave {
-  opacity: 0;
-  transition: all 0.25s ease-in-out;
+  z-index: 1;
+  transform-origin: bottom;
+  transform: scaleY(0); /* 초기 스케일 0으로 설정하여 숨김 */
+  transition: transform 0.3s ease; /* 스케일 변환에 대한 CSS 트랜지션 */
 }
 
 /* ---- section5 ---- */
@@ -131,4 +130,4 @@ footer {width: 100%;}
 .main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {cursor: url("../images/drag_cursor.png"), grab ; }
 .main-wrap #section5 .main-swiper4 .swiper-wrapper {gap: calc(100vw * 50 /1920);}
 .main-wrap #section5 .main-swiper4 .swiper-wrapper .swiper-slide {width: calc(100vw * 500 /1920);}
-.main-wrap #section5 .main-swiper4 .swiper-button-next {background: url('../images/swiper-next-bk.png'); margin-right: calc(100vw * 60 /1920); top: 0; width: calc(100vw * 108 /1920); height: calc(100vw * 77 /1920);}
+.main-wrap #section5 .main-swiper4 .swiper-button-next {margin-right: calc(100vw * 60 /1920); top: 0; width: calc(100vw * 108 /1920); height: calc(100vw * 77 /1920);}

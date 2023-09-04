@@ -60,8 +60,11 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
 /* ---- scroll ---- */  
 function gnbScrollEvent() {
   let documentHeight = $(document).scrollTop();
-  let section1Top = jQuery('#section1').offset().top;
+  let section1Top = jQuery('.main-wrap #section1').offset().top;
+  let section4Top = jQuery('.main-wrap #section4').offset().top;
+  let $gnb = $('#gnb .gnb__wrap li a');
   let $header = $('header');
+  let $language = $('#gnb .gnb__wrap .gnb__language');
   let $logo = $('#gnb .gnb__wrap .gnb__1d-wrap');
   let $right = $('#gnb .gnb__wrap .right');
   let $left = $('#gnb .gnb__wrap .left');
@@ -97,6 +100,18 @@ function gnbScrollEvent() {
         $left.removeClass('left1');
       }
     );
+  }
+
+  if (documentHeight >= section4Top-100) {
+    $gnb.addClass('color1');
+    $gnb.removeClass('color2');
+    $language.addClass('color1');
+    $language.removeClass('color2');
+  } else {
+    $gnb.addClass('color2');
+    $gnb.removeClass('color1');
+    $language.addClass('color2');
+    $language.removeClass('color1');
   }
 } 
 
