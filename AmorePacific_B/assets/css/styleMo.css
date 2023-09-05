@@ -4,7 +4,7 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
 ::-webkit-scrollbar {
   display: none;
 }
-
+.mo_wrap.gnb_wrap .img__wrap img {box-shadow: 0 1rem 3rem rgba(0,0,0,0.0);}
 .mo_wrap {position: absolute; top: 0; width: 100%; height: 100%; }
 .mo_wrap .img__wrap img {display: block; margin: 0 auto; width: calc(100vw* 360/1920); box-shadow: 0 1rem 3rem rgba(0,0,0,0.8);}
 .mo_wrap .mo_gnb {position: absolute; top: calc(100vw* 10/1920); left: calc(100vw* 1100/1920); width: calc(100vw* 35/1920); height: calc(100vw* 35/1920);}
@@ -13,9 +13,14 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
 .mo_wrap .mo_title__wrap .mo_main-title {white-space: nowrap;will-change: transform;animation: marquee1 40s linear infinite; animation-delay: 1s; }
 .mo_wrap .mo_title__wrap .mo_main-title img {height: calc(100vw * 220 /1920); width: auto;}
 .mo_wrap .gnb__wrap {width: 100%;}
-.mo_wrap .gnb__wrap ul {margin: auto; width: fit-content; padding: calc(100vw * 200 /1920) 0;}
-.mo_wrap .gnb__wrap ul li {margin-bottom: calc(100vw * 20 /1920); color: #000; font-family: 'Arita-dotum'; font-size: calc(100vw * 20 /1920); font-style: normal; font-weight: 400; line-height: normal; text-transform: uppercase;}
-.mo_wrap .gnb__wrap ul li:hover a {text-decoration: underline;}
+.mo_wrap .gnb__wrap .gnb__1d {margin: 0 auto; width: calc(100vw * 310 /1920); padding: calc(100vw * 120 /1920) 0;}
+.mo_wrap .gnb__wrap .gnb__1d li {margin-bottom: calc(100vw * 24 /1920); color: #000;}
+.mo_wrap .gnb__wrap .gnb__1d li:hover a {text-decoration: underline;}
+.mo_wrap .gnb__wrap .gnb__1d li {width: calc(100vw * 360 /1920); color: #000; font-family: 'Poppins'; font-size: calc(100vw * 30 /1920); font-style: normal; font-weight: 500; line-height: normal; text-transform: uppercase;}
+.mo_wrap .gnb__wrap .gnb__1d li .gnb__2d {display: none; padding-top: calc(100vw * 24 /1920); padding-bottom: calc(100vw * 14 /1920); }
+.mo_wrap .gnb__wrap .gnb__1d li .gnb__2d.eng li {font-family: 'Poppins'; font-size: calc(100vw * 22 /1920); font-style: normal; font-weight: 350; line-height: normal; text-transform: capitalize;}
+.mo_wrap .gnb__wrap .gnb__1d li .gnb__2d li {font-family: 'Arita-dotum'; font-size: calc(100vw * 22 /1920); font-style: normal; font-weight: 400; line-height: normal; text-transform: capitalize;}
+.mo_wrap .gnb__wrap .gnb__1d li:hover .gnb__2d {display: block;}
 
 @media screen and (max-width:720px) {
   .mo_wrap {position: absolute; top: 0; width: 100%; height: 100%;}
@@ -24,4 +29,12 @@ body {margin: 0 auto; height: 100%; width:100%; -ms-overflow-style: none; cursor
   .mo_wrap .mo_title__wrap {cursor: default; position: absolute; top: calc(100vw* 704/720); width: 100%; margin-left: 0;}
   .mo_wrap .mo_title__wrap .mo_main-title {white-space: nowrap;will-change: transform; animation: marquee1 50s linear infinite; animation-delay: 1s; }
   .mo_wrap .mo_title__wrap .mo_main-title img {height: calc(100vw * 440 /720); width: auto;}
+  .mo_wrap .gnb__wrap {width: calc(100vw* 720/720);}
+  .mo_wrap .gnb__wrap .gnb__1d {margin: 0; width: fit-content; padding: calc(100vw * 80 /360) calc(100vw * 40 /360); display: flex; flex-direction: column; gap: calc(100vw * 24 /360);}
+  .mo_wrap .gnb__wrap .gnb__1d li {width: calc(100vw * 360 /360); color: #000; font-family: 'PP Neue Montreal'; font-size: calc(100vw * 20 /360); font-style: normal; font-weight: 500; line-height: normal; text-transform: uppercase;}
+  .mo_wrap .gnb__wrap .gnb__1d li:active a {text-decoration: underline;}
+  .mo_wrap .gnb__wrap .gnb__1d li .gnb__2d {display: none; padding-top: calc(100vw * 24 /360); }
+  .mo_wrap .gnb__wrap .gnb__1d li .gnb__2d.eng li {font-family: 'Avenir'; font-size: calc(100vw * 16 /360); font-style: normal; font-weight: 350; line-height: normal; text-transform: capitalize;}
+  .mo_wrap .gnb__wrap .gnb__1d li .gnb__2d li {padding-bottom: calc(100vw * 14 /360); font-family: 'Arita-dotum'; font-size: calc(100vw * 16 /360); font-style: normal; font-weight: 400; line-height: normal; text-transform: capitalize;}
+  .mo_wrap .gnb__wrap .gnb__1d li:active .gnb__2d {display: block;}
 }
