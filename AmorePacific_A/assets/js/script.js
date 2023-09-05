@@ -24,7 +24,7 @@ const mainSwiper = new Swiper('.main-swiper', {
   on: {
     autoplayTimeLeft(s, time, progress) {
       progressCircle.style.setProperty("--progress", 1 - progress);
-      progressContent.textContent = `${Math.ceil(time / 1000)}`;
+      // progressContent.textContent = pagination;
     }
   }
 });
@@ -63,15 +63,50 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
   },
 });
 
-var subSwiper1 = new Swiper(".sub-swiper1", {
+var subSwiper1 = new Swiper(".sub-swiper1", {  
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  effect: "fade",
+  loop:true,
+  loopAdditionalSlides: 1,	
   grabCursor: true,
   slidesPerView: "auto",
-  effect: "fade",
+  pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
 });
-var subSwiper2 = new Swiper(".sub-swiper2", {
+var subSwiper2 = new Swiper(".sub-swiper2", {  
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  effect: "fade",
+  loop:true,
+  loopAdditionalSlides: 1,	
   grabCursor: true,
   slidesPerView: "auto",
+  pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
+});
+var subSwiper3 = new Swiper(".sub-swiper3", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   effect: "fade",
+  loop:true,
+  loopAdditionalSlides: 1,	
+  grabCursor: true,
+  slidesPerView: "auto",
+  pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
 });
 /* ---- gnb ---- */  
 /* ---- scroll ---- */  
@@ -113,3 +148,17 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+$(function(){
+	var $firstMenu = $('header .gnb__wrap'),
+			$header = $('header');
+	
+	$firstMenu.mouseenter(function(){
+		$header.addClass('gnb1');
+		$header.removeClass('gnb2');
+	})
+	.mouseleave(function(){
+		$header.addClass('gnb2');
+		$header.removeClass('gnb1');
+	});
+});

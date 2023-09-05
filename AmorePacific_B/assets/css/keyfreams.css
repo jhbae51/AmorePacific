@@ -273,20 +273,20 @@
 @keyframes header3 {
   from {
     background-color: transparent;
-    height: calc(100vw * 100 /1920);
+    height: calc(100vw * 90 /1920);
   }
   to {
     background-color: #fff;
-    height: auto;
+    height: calc(100vw * 500 /1920);
   }  
 }
 @keyframes header4 {
   from {
     background-color: #fff;
-    height: auto;
+    height: calc(100vw * 500 /1920);
   }
   to {
     background-color: #fff 0.4;
-    height: calc(100vw * 100 /1920);
+    height: calc(100vw * 90 /1920);
   }  
 }

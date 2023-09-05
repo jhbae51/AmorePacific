@@ -15,11 +15,12 @@ i {background-repeat: no-repeat; background-position: center; background-size: 1
 
 
 /* ---- Header ---- */
-header {z-index: 100; position: fixed; padding: calc(100vw * 30 /1920) calc(100vw * 105 /1920); width: 100%; background-color: rgba(0, 0, 0, 0.5);}
-header .gnb__wrap .gnb__1d-wrap {display: flex; justify-content: space-between;}
+header {z-index: 100; position: fixed; overflow:hidden; width: 100%; height: calc(100vw * 95 /1920);  background-color: rgba(0, 0, 0, 0.5);}
+header .gnb__wrap .gnb__1d-wrap {display: flex; justify-content: space-between; padding: calc(100vw * 30 /1920) calc(100vw * 105 /1920);}
 header .gnb__wrap .gnb__1d-wrap .gnb {display: inline-flex; align-items: center; gap: calc(100vw * 85 /1920);}
 header .gnb__wrap .gnb__1d-wrap .gnb li {display: flex;	flex-direction: column; transition: all ease-in-out 0.5s;}
 header .gnb__wrap .gnb__1d-wrap .gnb li a {color: #FFF; font-family: 'Poppins'; font-size: calc(100vw * 18 /1920); font-style: normal; font-weight: 300; line-height: normal; text-transform: uppercase;}
+header .gnb__wrap .gnb__1d-wrap .gnb li:hover {text-decoration: underline;}
 header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo {padding: 0 calc(100vw * 40 /1920);}
 header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a {background-image: url('../images/gnb-logo.png'); width: calc(100vw * 220 /1920); height: calc(100vw * 32 /1920); background-repeat: no-repeat; background-position: center; background-size: 100%;}
 header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a.color1 {background-image: url('../images/gnb-logo-bk.png'); transition: all ease-in-out 0.5s; }
@@ -27,6 +28,7 @@ header .gnb__wrap .gnb__1d-wrap .gnb .gnb_logo a.color2 {background-image: url('
 header .gnb__wrap .gnb__1d-wrap .language .gnb__language {background-image: url('../images/gnb_language.png'); width: calc(100vw * 134 /1920); height: calc(100vw * 32 /1920); background-repeat: no-repeat; background-position: center; background-size: 100%;}
 header .gnb__wrap .gnb__1d-wrap .language .gnb__language.color1 {background-image: url('../images/gnb_language-bk.png');}
 header .gnb__wrap .gnb__1d-wrap .language .gnb__language.color2 {background-image: url('../images/gnb_language.png');}
+header .gnb__wrap .gnb__2d-wrap { opacity: 0%; transform: translateY(-20px);}
 
 /* ---- footer ---- */
 /* footer {background-color: #fff; color: #000; position: relative;}

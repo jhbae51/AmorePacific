@@ -63,12 +63,79 @@ var mainSwiper4 = new Swiper(".main-swiper4", {
 /* ---- gnb ---- */  
 /* ---- scroll ---- */  
 function gnbScrollEvent() {
+  let $gnb = $('#gnb .gnb__wrap li a');
+  let $header = $('header');
+  let $gnb1 = $('#gnb .gnb__wrap .gnb__1d-wrap');
+  let $gnb2 = $('#gnb .gnb__wrap .gnb__2d-wrap');
+  let $language = $('#gnb .gnb__wrap .gnb__language');
+
+  $gnb1.hover(
+    function() {
+      $gnb2.addClass('header1');
+      $gnb2.removeClass('header2');
+      $header.addClass('header3');
+      $header.removeClass('header4');
+      $gnb.addClass('color1');
+      $gnb.removeClass('color2');
+      $language.addClass('color1');
+      $language.removeClass('color2');
+    }, function() {
+      $gnb2.addClass('header2');
+      $gnb2.removeClass('header1');
+      $header.addClass('header4');
+      $header.removeClass('header3');
+      $gnb.addClass('color2');
+      $gnb.removeClass('color1');
+      $language.addClass('color2');
+      $language.removeClass('color1');
+    }
+  );
+} 
+
+$(window).scroll(function () {
+  gnbScrollEvent();
+})
+
+$(document).ready(function () {
+  gnbScrollEvent();
+});
+
+// $(function(){
+// 	var $firstMenu = $('#gnb .gnb__wrap .gnb__1d-wrap'),
+// 			$header = $('header');
+	
+// 	$firstMenu.mouseenter(function(){
+//     $gnb2.addClass('header1');
+//     $gnb2.removeClass('header2');
+//     $header.addClass('header3');
+//     $header.removeClass('header4');
+//     $gnb.addClass('color1');
+//     $gnb.removeClass('color2');
+//     $language.addClass('color1');
+//     $language.removeClass('color2');
+// 	})
+// 	.mouseleave(function(){
+//     $gnb2.addClass('header2');
+//     $gnb2.removeClass('header1');
+//     $header.addClass('header4');
+//     $header.removeClass('header3');
+//     $gnb.addClass('color2');
+//     $gnb.removeClass('color1');
+//     $language.addClass('color2');
+//     $language.removeClass('color1');
+// 	});
+// });
+
+
+/* ---- scroll ---- */  
+/* ---- sec4 ---- */  
+function sec4ScrollEvent() {
   let documentHeight = $(document).scrollTop();
   let section4Top = jQuery('.main-wrap #section4').offset().top;
   let $section3 = $('.main-wrap #section3');
   let $section4 = $('.main-wrap #section4');
   let $section5 = $('.main-wrap #section5');
-  
+
   $section3.addClass('color3');
   $section3.removeClass('color4');
   $section4.addClass('color3');
@@ -92,13 +159,11 @@ function gnbScrollEvent() {
     $section5.removeClass('color4');
   }
 } 
-
 $(window).scroll(function () {
-  gnbScrollEvent();
+  sec4ScrollEvent();
 })
-
 $(document).ready(function () {
-  gnbScrollEvent();
+  sec4ScrollEvent();
 });
 
 

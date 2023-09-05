@@ -314,3 +314,26 @@
     transform: translateY(0px);
   }
 }
+
+.gnb1 {
+  animation: gnb1 0.3s ease-in-out forwards;
+}
+.gnb2 {
+  animation: gnb2 0.3s ease-in-out forwards;
+}
+@keyframes gnb1 {
+  from {
+    height: calc(100vw * 70 /1920);
+  }
+  to {
+    height: calc(100vw * 300 /1920);
+  }
+}
+@keyframes gnb2 {
+  from {
+    height: calc(100vw * 300 /1920);
+  }
+  to {
+    height: calc(100vw * 70 /1920);
+  }
+}
